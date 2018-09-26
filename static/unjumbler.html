@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unjumbler</title>
+</head>
+<body>
+  <h1>Unjumbler!</h1>
+  <p>Enter a jumbled word to find an exact match, or enter a word to find all
+  possible words it's letters can create</p>
+  <p><input type="text" id="jumbledWord"></p>
+  <p>
+    <label>Exact Words</label>
+    <input type="radio" name="resultType" checked="checked" id="exactWordsRadio">
+    <label>All Words</label>
+    <input type="radio" name="resultType" id="allWordsRadio">
+  </p>
+  <p>
+    <input type="submit" onclick=getWords()>
+  </p>
+  <p>
+    <div id="result"></div>
+  </p>
+
+  <script src="unjumbler.js"></script>
+</body>
+</html>
